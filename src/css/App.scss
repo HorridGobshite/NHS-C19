@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.application-container {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #fff;
+}
+
+.component-container {
+    position: relative;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+/* List Style */
+.component-container > .list-component {
+    background-color: #edf3f4;
+}
+
+/* QR Style */
+.component-container > .qr-component {
+    background-color: #f0f4f5;
+}
+
+.qr-component > .QR-Capture {
+    display: none;
+}
+
+.qr-component > .QR-Video-Stream, .qr-component > .QR-Overlay {
+    position: relative;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.qr-component > .QR-Video-Stream {
+    z-index: 90;
+}
+
+.qr-component > .QR-Overlay {
+    z-index: 95;
+}
+
+
+/* Checkin Style */
+.component-container > .checkin-component {
+    background-color: #f0f4f5;
+}
